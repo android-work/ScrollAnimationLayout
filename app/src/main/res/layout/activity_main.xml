@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000"
+        android:id="@+id/frameLayout"/>
+
+    <com.android.work.scroll_animation_layout.view.ScrollAnimationLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_animation_layout"
+        android:background="#ffaacc"
+        android:paddingTop="40dp"
+        app:source_marginTop="400dp"
+        app:duration_unit="millisecond"
+        app:exec_duration="500"
+        app:drag_scale="6"
+        app:velocity_sensitivity="1200">
+
+        <com.android.work.scroll_animation_layout.view.AnimationNestScrollView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#aaccdd">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </com.android.work.scroll_animation_layout.view.AnimationNestScrollView>
+    </com.android.work.scroll_animation_layout.view.ScrollAnimationLayout>
+
+</LinearLayout>

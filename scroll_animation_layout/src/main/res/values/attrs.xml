@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScrollAnimationLayout">
+        <attr name="source_marginTop" format="dimension"/>
+        <attr name="exec_duration" format="integer"/>
+        <attr name="duration_unit" format="enum">
+            <enum name="millisecond" value="0"/>
+            <enum name="second" value="1"/>
+        </attr>
+        <attr name="drag_scale" format="integer"/>
+        <attr name="velocity_sensitivity" format="integer"/>
+    </declare-styleable>
+</resources>
