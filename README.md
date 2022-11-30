@@ -10,7 +10,7 @@ allprojects {
 	}
   
   dependencies {
-	        implementation 'com.github.android-work:ScrollAnimationLayout:v1.0.0'
+	        implementation 'com.github.android-work:ScrollAnimationLayout:v1.0.2'
 	}
 
 #布局引用
